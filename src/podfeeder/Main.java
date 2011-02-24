@@ -49,7 +49,7 @@ public class Main {
         // Disable this for limited output.
         boolean beVerbose = true;
 
-        // Added this as a convienience function when working w/ multiple
+        // Added this as a convenience function when working w/ multiple
         // folders inside of another folder..
         String Directory = "DnD_Series4_DarkSun";
 
