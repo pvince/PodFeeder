@@ -109,7 +109,8 @@ public class Main {
                 if (beVerbose) {
                     System.out.println("Loading mp3 files...");
                 }
-
+                //TODO: Maybe make this part of the scan loop? In case one mp3 file has an image?
+                //TODO: There can be multiple images per album art, maybe save out all images?  Can we do a diff on the images to determine if images match?
                 pfUtilities.saveAlbumArt(mp3Files[0], "test.jpg");
                 ArrayList<pfItem> mp3ItemList = new ArrayList<pfItem>();
                 for (int i = 0; i < mp3Files.length; i++) {
@@ -133,7 +134,7 @@ public class Main {
                 xmlOutput += "<link>" + strLink + "</link>\n";
                 xmlOutput += "<language>en-us</language>\n";
                 xmlOutput += "<copyright>" + strCopyright + "</copyright>\n";
-                xmlOutput += "<lastBuildDate>" + pfUtilities.getDateTime() + "</lastBuildDate>\n"; //TODO: Generate todays date in correct format
+                xmlOutput += "<lastBuildDate>" + pfUtilities.getDateTime() + "</lastBuildDate>\n";  //TODO: Generate todays date in correct format
                 xmlOutput += "<pubDate>" + pfUtilities.getDateTime() + "</pubDate>\n";              //TODO: Generate todays date in correct format
                 xmlOutput += "<docs>http://blogs.law.harvard.edu/tech/rss</docs>\n";
                 xmlOutput += "<webMaster>" + strWebmaster + "</webMaster>\n";
