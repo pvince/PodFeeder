@@ -1,0 +1,45 @@
+------- Assuming your local setup is something like the following -------
+Source files at:
+C:\Audio Books\Jordan, Robert\01 - The Eye of the World
+
+All the audio files should be *.mp3
+All the audio files for the audiobook should be directly in the above directory (ex. a flat list of MP3's directly in C:\Audio Books\Jordan, Robert\01 - The Eye of the World)
+All the audio files should have ID3 tags for: Track #, Album Title
+The Track # should be strictly a number (ex. 1, 2, 3, 4, 5) NOT (1/15, 2/15, 3/15, ...)
+
+My final 'Web' directory is
+C:\Wamp\html\podcasts
+
+Such that my local address to that directory is:
+http://192.168.1.99/podcasts
+
+------- Configuration Settings -------
+Variables in "https://github.com/pvince/PodFeeder/blob/master/src/podfeeder/Main.java" you need to update
+
+AlbumDir = C:\\Audio Books\\Jordan, Robert\\01 - The Eye of the World
+ServerAddress = http://192.168.1.99/podcasts
+
+------- Final steps after running program -------
+You will end up with:
+C:\Audio Books\Jordan, Robert\00_NewSpring.xml
+-- This is the Podcast RSS Feed
+
+Copy:
+C:\Audio Books\Jordan, Robert\01 - The Eye of the World
+to
+C:\Wamp\html\podcasts\01 - The Eye of the World
+
+Copy:
+C:\Audio Books\Jordan, Robert\00_NewSpring.xml
+to
+C:\Wamp\html\podcasts\00_NewSpring.xml
+
+
+In your podcasting client:
+- Add a URL to: http:\\192.168.1.99\podcasts\00_NewSpring.xml
+
+
+
+
+
+
