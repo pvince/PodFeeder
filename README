@@ -21,7 +21,7 @@ ServerAddress = http://192.168.1.99/podcasts
 
 ------- Final steps after running program -------
 You will end up with:
-C:\Audio Books\Jordan, Robert\00_NewSpring.xml
+C:\Audio Books\Jordan, Robert\01 - The Eye of the World\00_NewSpring.xml
 -- This is the Podcast RSS Feed
 
 Copy:
@@ -30,7 +30,7 @@ to
 C:\Wamp\html\podcasts\01 - The Eye of the World
 
 Copy:
-C:\Audio Books\Jordan, Robert\00_NewSpring.xml
+C:\Audio Books\Jordan, Robert\01 - The Eye of the World\00_NewSpring.xml
 to
 C:\Wamp\html\podcasts\00_NewSpring.xml
 
