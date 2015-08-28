@@ -14,7 +14,7 @@ Such that my local address to that directory is:
 http://192.168.1.99/podcasts
 
 ------- Configuration Settings -------
-Variables in "https://github.com/pvince/PodFeeder/blob/master/src/podfeeder/Main.java" you need to update
+Variables in "PodFeeder.properties" you need to update
 
 AlbumDir = C:\\Audio Books\\Jordan, Robert\\01 - The Eye of the World
 ServerAddress = http://192.168.1.99/podcasts
